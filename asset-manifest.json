@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/shaiju-john/static/css/main.bf538fe7.css",
-    "main.js": "/shaiju-john/static/js/main.91b36b78.js",
+    "main.js": "/shaiju-john/static/js/main.07e7cdc0.js",
     "static/media/HeroImage.jpg": "/shaiju-john/static/media/HeroImage.c04e45271a1ea0a7f830.jpg",
     "index.html": "/shaiju-john/index.html",
     "main.bf538fe7.css.map": "/shaiju-john/static/css/main.bf538fe7.css.map",
-    "main.91b36b78.js.map": "/shaiju-john/static/js/main.91b36b78.js.map"
+    "main.07e7cdc0.js.map": "/shaiju-john/static/js/main.07e7cdc0.js.map"
   },
   "entrypoints": [
     "static/css/main.bf538fe7.css",
-    "static/js/main.91b36b78.js"
+    "static/js/main.07e7cdc0.js"
   ]
 }
