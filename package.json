@@ -1,7 +1,7 @@
 {
   "name": "shaiju -john-portfolio",
   "version": "0.1.0",
-  "homepage": "https://rishavchanda.github.io",
+  "homepage": "https://Shaijujin.github.io/shaiju-john",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
