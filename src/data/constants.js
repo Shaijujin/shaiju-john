@@ -12,6 +12,7 @@ export const Bio = {
   resume:
     "https://drive.google.com/file/d/1TwqLm1rie2YjK1oxJQ_pExSxiZT1_anA/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/shaiju-shaiju-184270227/",
+  
   twitter: "https://twitter.com/Shaijujin",
   insta: "https://www.instagram.com/_shaiju_john_/",
   facebook: "https://www.facebook.com/profile.php?id=100036467872389",
