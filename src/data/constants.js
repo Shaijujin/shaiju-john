@@ -10,7 +10,7 @@ export const Bio = {
     "Motivated and versatile Backend Developer with 2 years of expertise in Python and FastAPI. Passionate about fintech applications for investment and borrower security. Proven track record in delivering high-quality results with a positive attitude and a growth mindset. Experienced in third-party API integration and advanced model calculations. Proficient in PHP frameworks Slim and Laravel, dedicated to continuous learning and professional development.",
   github: "https://github.com/Shaijujin",
   resume:
-    "https://drive.google.com/file/d/1TwqLm1rie2YjK1oxJQ_pExSxiZT1_anA/view?usp=drive_link",
+    "https://drive.google.com/file/d/1wRexu0TZn6S8KvE7dJkrJJpo3tIm0oqz/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/shaiju-shaiju-184270227/",
   twitter: "https://twitter.com/Shaijujin",
   insta: "https://www.instagram.com/_shaiju_john_/",
