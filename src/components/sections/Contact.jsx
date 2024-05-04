@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
-import styled from "styled-components";
-import emailjs from "@emailjs/browser";
-import EarthCanvas from "../canvas/Earth";
+import React from 'react'
+import styled from 'styled-components'
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { Snackbar } from '@mui/material';
 
 const Container = styled.div`
   display: flex;
@@ -125,48 +126,51 @@ const ContactButton = styled.input`
   font-weight: 600;
 `;
 
+
+
 const Contact = () => {
+
+  //hooks
+  const [open, setOpen] = React.useState(false);
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_tox7kqs",
-        "template_nv7k7mj",
-        form.current,
-        "SybVGsYS52j2TfLbi"
-      )
-      .then(
-        (result) => {
-          alert("Message Sent");
-          form.current.resut();
-        },
-        (error) => {
-          alert(error);
-        }
-      );
-  };
+    console.log("Form submitted!");
+    emailjs.sendForm('service_ju0zyyo', 'template_b993eaj', form.current, 'ekjhdHfXwPG6avH3q')
+      .then((result) => {
+        setOpen(true);
+        form.current.reset();
+      }, (error) => {
+        console.log(error.text);
+      });
+  }
+
+
 
   return (
     <Container>
       <Wrapper>
-        <EarthCanvas />
         <Title>Contact</Title>
-        <Desc>
-          Feel free to reach out to me for any questions or opportunities!
-        </Desc>
-        <ContactForm onSubmit={handleSubmit}>
+        <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
+        <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" name="message" rows={4} />
+          <ContactInput required type='email' placeholder="Your Email" name="from_email" />
+          <ContactInput required placeholder="Your Name" name="from_name" />
+          <ContactInput required placeholder="Subject" name="subject" />
+          <ContactInputMessage required placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
+        <Snackbar
+          open={open}
+          autoHideDuration={6000}
+          onClose={()=>setOpen(false)}
+          message="Email sent successfully!"
+          severity="success"
+        />
       </Wrapper>
     </Container>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact
